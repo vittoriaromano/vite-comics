@@ -5,24 +5,25 @@ export default{
         return{
            mainList:[
             {
-                image:'/buy-dc-power-visa.svg',
+                image:'/buy-comics-digital-comics.png',
                 title:'DIGITAL COMICS'
             },
             {
-                image:'/buy-dc-power-visa.svg',
-                title:'DIGITAL COMICS'
+                image:'/buy-comics-merchandise.png',
+                title:'DC MERCHANDISE'
+            },
+            {
+                image:'/buy-comics-subscriptions.png',
+                title:'SUBSCRIPTION'
+            },
+            {
+                image:'/buy-comics-shop-locator.png',
+                
+                title:'COMIC SHOP LOCATOR'
             },
             {
                 image:'/buy-dc-power-visa.svg',
-                title:'DIGITAL COMICS'
-            },
-            {
-                image:'/buy-dc-power-visa.svg',
-                title:'DIGITAL COMICS'
-            },
-            {
-                image:'/buy-dc-power-visa.svg',
-                title:'DIGITAL COMICS'
+                title:'DC POWER VISA'
             }
            ]
         }
@@ -66,19 +67,19 @@ div .main-two{
     padding: 60px;
     ul{
         display: flex;
+        justify-content: center;
     }
     li{
         display: flex;
-        gap: 5px;
+        justify-content: center;
+        align-items: center;
         list-style: none;
-        color: white;
+        color: variable.$third-color;
         padding: 10px;
-
         img{
-            height: 20px;
+            height: 40px;
+            margin-right: 5px;
         }
     }
 }
-
-
 </style>

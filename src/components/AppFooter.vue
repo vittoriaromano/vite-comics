@@ -58,22 +58,22 @@ export default{
         
         <div class="footer-due">
             <button>SIGN-UP NOW!</button>
-            <div>
-                <ul>
-                    <li>FOLLOW US</li>
-                    <li><img src="/footer-facebook.png" alt="facebook"></li>
-                    <li><img src="/footer-twitter.png" alt="twitter"></li>
-                    <li><img src="/footer-youtube.png" alt="youtube"></li>
-                    <li><img src="/footer-pinterest.png" alt="pinterest"></li>
-                    <li><img src="/footer-periscope.png" alt="periscope"></li>
-                </ul>
-            </div>
+            <ul>
+                <li>FOLLOW US</li>
+                <li><img src="/footer-facebook.png" alt="facebook"></li>
+                <li><img src="/footer-twitter.png" alt="twitter"></li>
+                <li><img src="/footer-youtube.png" alt="youtube"></li>
+                <li><img src="/footer-pinterest.png" alt="pinterest"></li>
+                <li><img src="/footer-periscope.png" alt="periscope"></li>
+            </ul>
+            
         </div>
     </footer>
     
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/variable.scss';
 
 ul{
         padding: 0;
@@ -88,14 +88,20 @@ ul{
 .footer-uno{
    background-image: url('/footer-bg.jpg');
    padding: 60px;
-   color: white;
+   color: variable.$third-color;
    display: flex;
-   gap: 60px;
+   justify-content: baseline;
+   align-items: normal;
+   padding-left: 10%;
+   div{
+    margin-right: 60px;
+   }
 }
 .footer-due{
-    background-color: rgb(97, 97, 97);
+    background-color: variable.$secondary-color;
     padding: 30px;
-    margin: 0, auto;
+    padding-left: 10%;
+    padding-right: 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -104,14 +110,19 @@ ul{
         align-items: center;
     }
     li{
-        color: blue;
+        color: variable.$primary-color;
         margin: 10px;
     }
     button{
-        padding: 10px;
+        padding: 15px;
         background-color: transparent;
-        border: 2px solid blue;
-        color: white;
+        border: 2px solid variable.$primary-color;
+        color: variable.$third-color;
+        &:hover{
+            color:variable.$primary-color;
+            background-color: variable.$third-color;
+        }
     }
 }
+
 </style>

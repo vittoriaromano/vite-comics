@@ -107,7 +107,6 @@ nav{
             display: inline-block;
             padding: 18px;
             color: black;
-
             &:hover {
                color: variable.$primary-color; 
             }
