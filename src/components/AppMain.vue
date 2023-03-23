@@ -53,9 +53,7 @@ export default{
 
 <style lang="scss" scoped>
 @use '../styles/variable.scss';
-main{
-    margin: 0, auto;
-}
+
 div .main-one{
     background-color: black;
     padding: 60px;
