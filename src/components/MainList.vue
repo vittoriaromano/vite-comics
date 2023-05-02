@@ -1,11 +1,7 @@
 <script>
-import ProductList from './ProductList.vue';
 export default{
-    name: 'AppMain',
-    components: {
-     ProductList, 
-    },
-     data(){
+    name: 'Main List',
+    data(){
          return{
             mainList:[
              {
@@ -33,15 +29,10 @@ export default{
          }
      },
 }
-</script>   
+
+</script>
 
 <template>
-    <main>
-        <!-- CONTENUTO -->
-    <div class="main-one">
-     <PruductList></PruductList>
-    </div>
-    <!-- LINK -->
     <div class="main-two">
         <ul>
             <li v-for="items in mainList">
@@ -51,21 +42,12 @@ export default{
             
         </ul>
     </div>
-
-    </main>
-    
 </template>
+
+
 
 <style lang="scss" scoped>
 @use '../styles/variable.scss';
-
-div .main-one{
-    background-color: black;
-    padding: 60px;
-    span{
-        color: white;
-    }
-}
 div .main-two{
     background-color: variable.$primary-color;
     padding: 60px;
@@ -86,4 +68,5 @@ div .main-two{
         }
     }
 }
+
 </style>
